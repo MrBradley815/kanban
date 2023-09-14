@@ -1,9 +1,18 @@
 <template>
   <div>
-    <h1>Home</h1>
+    <Header />
+    <main>
+      <SideNav />
+      <Board />
+    </main>
   </div>
 </template>
 
 <script setup></script>
 
-<style scoped></style>
+<style scoped>
+  main {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+  }
+</style>
