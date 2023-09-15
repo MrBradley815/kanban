@@ -1,18 +1,36 @@
 <template>
   <div>
-    <Header />
-    <main>
+    <HeaderNav />
+    <main :class="store.isHidden === false ? '' : 'hidden'">
       <SideNav />
       <Board />
     </main>
+    <span
+      :class="[
+        'fixed bottom-8 left-0 bg-blue-400 ps-[18px] pe-[22px] py-5 rounded-r-3xl cursor-pointer',
+        store.isHidden === false ? 'hidden' : '',
+      ]"
+      @click="store.toggleSideNav">
+      <img
+        src="~/assets/images/icon-show-sidebar.svg"
+        alt="show icon" />
+    </span>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useNavbarStore } from "~/store/sidenav";
+
+const store = useNavbarStore();
+</script>
 
 <style scoped>
-  main {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-  }
+main {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+main.hidden {
+  grid-template-columns: 1fr;
+}
 </style>
