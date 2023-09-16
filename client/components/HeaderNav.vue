@@ -14,7 +14,7 @@
     </div>
     <div class="flex items-center justify-between w-full px-6 py-5 border-s border-gray-400 dark:border-black-300">
       <h1 class="text-black-600 dark:text-white-400">Platform Launch</h1>
-      <button class="btn">+ Add New Task</button>
+      <button class="btn text-[15px] leading-[19px] font-bold px-6 py-[15px]">+ Add New Task</button>
     </div>
   </header>
 </template>

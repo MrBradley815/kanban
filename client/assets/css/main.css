@@ -33,18 +33,31 @@
   p.md {
     @apply text-xs leading-[15px] font-bold;
   }
+
+  input {
+    @apply text-[13px] leading-[23px] font-medium text-black-600 dark:text-white-400 py-2 px-4 w-full rounded border border-[rgba(130,143,163,25%)] transition;
+  }
+
+  input:hover,
+  input:focus {
+    @apply border-blue-400;
+  }
+
+  input::placeholder {
+    @apply text-[rgba(0,1,18,25%)] dark:text-[255,255,255,25%];
+  }
 }
 
 @layer components {
   .btn {
-    @apply text-white-400 bg-blue-400 hover:bg-blue-300 font-bold text-[13px] leading-[19px] px-6 py-[14px] rounded-full transition;
+    @apply text-white-400 bg-blue-400 hover:bg-blue-300 rounded-full transition;
   }
 
   .btn-secondary {
-    @apply text-blue-400 text-[13px] font-bold bg-[rgba(99,95,199,10%)] hover:bg-[rgba(99,95,199,25%)] dark:bg-white-400 dark:hover:bg-white-400 leading-[23px] py-2 rounded-full transition;
+    @apply text-blue-400 bg-[rgba(99,95,199,10%)] hover:bg-[rgba(99,95,199,25%)] dark:bg-white-400 dark:hover:bg-white-400 rounded-full transition;
   }
 
   .btn-delete {
-    @apply text-white-400 text-[13px] font-bold bg-red-400 hover:bg-red-300 leading-[23px] py-2 rounded-full transition;
+    @apply text-white-400 bg-red-400 hover:bg-red-300 rounded-full transition;
   }
 }
