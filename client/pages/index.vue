@@ -16,7 +16,7 @@
         alt="show icon" />
     </span>
     <Modal>
-      <EditBoard />
+      <NewBoard />
     </Modal>
   </div>
 </template>
@@ -26,6 +26,7 @@ import Modal from "~/components/modals/Modal.vue";
 import DeleteTask from "~/components/modals/DeleteTask.vue";
 import DeleteBoard from "~/components/modals/DeleteBoard.vue";
 import EditBoard from "~/components/modals/EditBoard.vue";
+import NewBoard from "~/components/modals/NewBoard.vue";
 import { useNavbarStore } from "~/store/sidenav";
 
 const store = useNavbarStore();
