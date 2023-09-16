@@ -1,5 +1,5 @@
 /* @import url('~/assets/fonts/PlusJakartaSans.ttf'); */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -17,6 +17,6 @@
 
 @layer components {
   .btn {
-    @apply text-white-400 bg-blue-400 hover:bg-blue-300 font-bold text-[13px] leading-[19px] px-6 py-[14px] rounded-full;
+    @apply text-white-400 bg-blue-400 hover:bg-blue-300 font-bold text-[13px] leading-[19px] px-6 py-[14px] rounded-full transition;
   }
 }

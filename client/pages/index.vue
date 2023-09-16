@@ -15,10 +15,12 @@
         src="~/assets/images/icon-show-sidebar.svg"
         alt="show icon" />
     </span>
+    <Modal />
   </div>
 </template>
 
 <script setup>
+import Modal from "~/components/modals/Modal.vue";
 import { useNavbarStore } from "~/store/sidenav";
 
 const store = useNavbarStore();
