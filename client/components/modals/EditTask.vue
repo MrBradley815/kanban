@@ -32,15 +32,18 @@ recharge the batteries a little."></textarea>
     </div>
     <button class="btn-secondary text-[13px] leading-[23px] font-bold p-2 w-full mb-6">+ Add New Subtask</button>
     <p class="md text-gray-500 mb-2">Status</p>
-    <select class="mb-6">
-      <option value="Todo">Todo</option>
-      <option value="Doing">Doing</option>
-      <option value="Done">Done</option>
-    </select>
-    <button class="btn text-[13px] leading-[23px] font-bold p-2 w-full">Save Changes</button>
+    <SelectMenu
+      :options="options"
+      :defaultValue="defaultValue"
+      :tabindex="tabindex" />
+    <button class="btn text-[13px] leading-[23px] font-bold p-2 w-full mt-6">Save Changes</button>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const options = ref(["Todo", "Doing", "Done"]);
+const defaultValue = ref("Doing");
+const tabindex = ref("0");
+</script>
 
 <style scoped></style>
