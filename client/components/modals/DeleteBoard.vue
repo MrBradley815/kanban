@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 class="text-red-400 mb-6">Delete this board?</h2>
-    <p class="text-gray-500 text-[13px] leading-[23px] font-medium mb-6">
+    <p class="lg text-gray-500 mb-6">
       Are you sure you want to delete the 'Platform Launch' board? This action will remove all columns and tasks and cannot be reversed.
     </p>
     <div class="flex gap-4">
