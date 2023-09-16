@@ -46,6 +46,19 @@
   input::placeholder {
     @apply text-[rgba(0,1,18,25%)] dark:text-[255,255,255,25%];
   }
+
+  textarea {
+    @apply text-[13px] leading-[23px] font-medium text-black-600 dark:text-white-400 py-2 px-4 w-full h-[112px] rounded border border-[rgba(130,143,163,25%)] transition;
+  }
+
+  textarea:hover,
+  textarea:focus {
+    @apply border-blue-400;
+  }
+
+  textarea::placeholder {
+    @apply text-[rgba(0,1,18,25%)] dark:text-[255,255,255,25%];
+  }
 }
 
 @layer components {
