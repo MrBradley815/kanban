@@ -10,7 +10,7 @@
         <img
           src="~/assets/images/icon-hide-sidebar.svg"
           alt="hide icon" />
-        <h3 class="text-[15px] font-bold leading-[19px] text-gray-500">Hide Sidebar</h3>
+        <h3 class="text-gray-500">Hide Sidebar</h3>
       </div>
     </div>
   </nav>
