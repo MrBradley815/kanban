@@ -15,15 +15,16 @@
         src="~/assets/images/icon-show-sidebar.svg"
         alt="show icon" />
     </span>
-    <Modal>
-      <DeleteTask />
-    </Modal>
+    <!-- <Modal>
+      <DeleteBoard />
+    </Modal> -->
   </div>
 </template>
 
 <script setup>
 import Modal from "~/components/modals/Modal.vue";
 import DeleteTask from "~/components/modals/DeleteTask.vue";
+import DeleteBoard from "~/components/modals/DeleteBoard.vue";
 import { useNavbarStore } from "~/store/sidenav";
 
 const store = useNavbarStore();
