@@ -16,7 +16,7 @@
         alt="show icon" />
     </span>
     <Modal>
-      <DeleteTask />
+      <EditBoard />
     </Modal>
   </div>
 </template>
