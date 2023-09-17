@@ -34,16 +34,16 @@
     @apply text-xs leading-[15px] font-bold;
   }
 
-  input {
+  input[type="text"] {
     @apply text-[13px] leading-[23px] font-medium text-black-600 dark:text-white-400 py-2 px-4 w-full rounded border border-[rgba(130,143,163,25%)] transition;
   }
 
-  input:hover,
-  input:focus {
+  input[type="text"]:hover,
+  input[type="text"]:focus {
     @apply border-blue-400;
   }
 
-  input::placeholder {
+  input[type="text"]::placeholder {
     @apply text-[rgba(0,1,18,25%)] dark:text-[255,255,255,25%];
   }
 

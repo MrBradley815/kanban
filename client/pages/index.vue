@@ -16,7 +16,7 @@
         alt="show icon" />
     </span>
     <Modal>
-      <NewTask />
+      <ViewTask />
     </Modal>
   </div>
 </template>
@@ -29,6 +29,7 @@ import EditBoard from "~/components/modals/EditBoard.vue";
 import NewBoard from "~/components/modals/NewBoard.vue";
 import EditTask from "~/components/modals/EditTask.vue";
 import NewTask from "~/components/modals/NewTask.vue";
+import ViewTask from "~/components/modals/ViewTask.vue";
 import { useNavbarStore } from "~/store/sidenav";
 
 const store = useNavbarStore();
