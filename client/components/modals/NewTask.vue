@@ -3,6 +3,7 @@
     <h2 class="text-black-600 mb-6">Add New Task</h2>
     <p class="md text-gray-500 mb-2">Title</p>
     <input
+      type="text"
       class="mb-6"
       placeholder="e.g. Take coffee break" />
     <p class="md text-gray-500 mb-2">Description</p>
@@ -12,14 +13,18 @@
 recharge the batteries a little."></textarea>
     <p class="md text-gray-500 mb-2">Subtasks</p>
     <div class="flex items-center gap-4 mb-3">
-      <input placeholder="e.g. Make coffee" />
+      <input
+        type="text"
+        placeholder="e.g. Make coffee" />
       <img
         class="cursor-pointer hover:fill-red-400"
         src="~/assets/images/icon-cross.svg"
         alt="delete icon" />
     </div>
     <div class="flex items-center gap-4 mb-3">
-      <input placeholder="e.g. Drink coffee & smile" />
+      <input
+        type="text"
+        placeholder="e.g. Drink coffee & smile" />
       <img
         class="cursor-pointer hover:fill-red-400"
         src="~/assets/images/icon-cross.svg"
